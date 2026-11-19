@@ -1,105 +1,126 @@
 # 📚 Books Data Analytics Dashboard
 
-## Project Overview
-This project focuses on collecting, cleaning, analyzing, and visualizing book data from the Books to Scrape website. Python was used for web scraping and data processing, while Power BI was used to create an interactive dashboard for exploring book prices, ratings, categories, and availability.
+## 📌 Project Overview
 
-## 🎯 Objectives
-- Collect book data through web scraping.
-- Clean and prepare data for analysis.
-- Analyze book prices and customer ratings.
-- Categorize books based on price ranges.
-- Build an interactive dashboard using Power BI.
-- Identify insights through data visualization.
+This project focuses on **web scraping, data cleaning, data analysis, and visualization** using book data collected from the Books to Scrape website.
 
-## 🛠️ Tools & Technologies
+The scraped data was processed and transformed into a clean dataset, followed by the development of an interactive Power BI dashboard to analyze book prices, ratings, availability, and price categories.
+
+## 🔄 Project Workflow
+
+1. 🌐 Web Scraping – Extracted book information using Python.
+2. 🧹 Data Cleaning – Cleaned and prepared the raw dataset.
+3. 📊 Data Analysis – Explored book prices, ratings, availability, and categories.
+4. 📈 Visualization – Created an interactive Power BI dashboard.
+5. 💡 Insights – Analyzed the dataset to understand book distribution and pricing patterns.
+
+## 🛠️ Technologies Used
+
 - Python
 - Requests
 - BeautifulSoup
 - lxml
 - Pandas
 - Microsoft Power BI
-- DAX
-- Excel / CSV
+- CSV
 
-## 📊 Dashboard Features
-
-### KPI Cards
-- Total Books
-- Average Price
-- Average Rating
-- Budget Books
-- Medium Books
-
-### Visualizations
-- Book count by rating
-- Book distribution by price category
-- Price vs. rating scatter plot
-- Book count by price bins
-- Price analysis by book name
-- Book availability analysis
-- Average price by rating
-- Rating and price category comparison
-
-### Interactive Filters
-- Price Category
-- Stock Status
-- Customer Rating
-
-## 🔄 Project Workflow
-
-1. Scraped book information from Books to Scrape using Python.
-2. Extracted book names, prices, ratings, availability, and links.
-3. Stored the collected data in structured files.
-4. Cleaned and prepared the data for analysis.
-5. Created calculated measures and categories using Power BI and DAX.
-6. Built an interactive dashboard using visualizations and slicers.
-
-## 📁 Project Structure
+## 📂 Project Structure
 
 ```text
 Books-Data-Analytics-Dashboard/
 │
-├── dataset/
-│   ├── raw_books_data.xlsx
-│   ├── cleaned_books_data.xlsx
-│   └── final_bi_data.xlsx
+├── Code Alpha_scrapping_books_to_scrap.py
+├── raw_books_data.csv
+├── cleaned_books_data.csv
+├── final BI_data.csv
+├── code alpha.pbix
+├── README.md
 │
-├── powerbi/
-│   └── Books_Data_Analytics_Dashboard.pbix
-│
-├── python/
-│   └── books_scraping.py
-│
-├── screenshots/
-│   └── dashboard.png
-│
-└── README.md
+└── screenshots/
+    ├── Dashboard Screenshot 1
+    └── Dashboard Screenshot 2
 ```
 
-## 📈 Key Insights
+## 📊 Dashboard Features
 
-The dashboard enables users to explore:
-- Distribution of books across different ratings.
-- Price distribution across different ranges.
-- Number of books in Budget, Medium, and Premium categories.
-- Relationship between book prices and ratings.
-- Book availability information.
-- Average prices associated with different ratings.
+The Power BI dashboard provides insights into:
 
-## 🖥️ Dashboard Preview
+- Total number of books
+- Average book price
+- Average book rating
+- Budget, Medium, and Premium book categories
+- Book distribution by rating
+- Book distribution by price category
+- Price and rating analysis
+- Stock availability
+- Price distribution analysis
 
-_Add your dashboard screenshot here._
+## 📈 Key Dashboard Metrics
+
+| Metric | Value |
+|---|---:|
+| Total Books | 1,000 |
+| Average Price | 35.07 |
+| Average Rating | 2.92 |
+| Budget Books | 196 |
+| Medium Books | 401 |
+
+## 📷 Dashboard Preview
+
+The interactive dashboard contains KPI cards, charts, and slicers to explore the book dataset based on price range, stock status, and customer ratings.
+
+### Books Data Analytics Dashboard
+
+![Books Dashboard](Screenshot%202026-11-20%20021432.png)
+
+### Dashboard Analysis
+
+![Books Dashboard Analysis](Screenshot%202026-11-20%20021511.png)
+
+## 📁 Dataset Files
+
+- `raw_books_data.csv` – Original scraped dataset.
+- `cleaned_books_data.csv` – Cleaned and processed dataset.
+- `final BI_data.csv` – Dataset used for the final Power BI analysis.
+
+## 💻 Python Scraping Code
+
+The Python script uses Requests and BeautifulSoup to extract book information from the website.
+
+Extracted information includes book names, prices, ratings, availability, and links.
+
+## 🚀 How to Run
+
+1. Clone this repository:
+
+```bash
+git clone https://github.com/Vinay-556/Books-Data-Analytics-Dashboard.git
+```
+
+2. Install the required libraries:
+
+```bash
+pip install requests beautifulsoup4 lxml pandas
+```
+
+3. Run the Python script:
+
+```bash
+python "Code Alpha_scrapping_books_to_scrap.py"
+```
+
+4. Open the Power BI `.pbix` file to explore the dashboard.
 
 ## 👨‍💻 Author
 
 **Vinay Kumar Gutha**
 
-B.Tech – Computer Science and Engineering (Artificial Intelligence)
+🎓 B.Tech – Computer Science and Engineering (Artificial Intelligence)
 
-GitHub: https://github.com/Vinay-556
+🔗 GitHub: https://github.com/Vinay-556
 
-LinkedIn: https://www.linkedin.com/in/vinaykumargutha
+🔗 LinkedIn: https://www.linkedin.com/in/vinaykumargutha
 
 ---
 
-⭐ If you find this project interesting, feel free to explore it!
+⭐ If you find this project interesting, feel free to explore the repository!
